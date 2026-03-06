@@ -19,21 +19,21 @@ TOOL_3_URL = "https://costories.streamlit.app/"
 # Опис інструментів у структурі даних, щоб було легко додавати нові
 TOOLS = [
     {
-        "name": "Аналіз дзвінків",
-        "description": "Перегляд і аналіз показників дзвінків за період.",
+        "name": "Звіт за день",
+        "description": "Формування звіту менеджера за день",
         "emoji": "📊",
         "url": TOOL_1_URL,
     },
     {
-        "name": "Помічник скриптів",
-        "description": "Робота зі скриптами спілкування та підказками для менеджера.",
-        "emoji": "🧠",
+        "name": "Розподіл заявок",
+        "description": "Автоматичний розподіл заявок між менеджера по обраному напрямку",
+        "emoji": "⚙️",
         "url": TOOL_2_URL,
     },
     {
-        "name": "CRM інструмент",
-        "description": "Управління заявками, клієнтами та супровід угод.",
-        "emoji": "🗂️",
+        "name": "Кошторис",
+        "description": "Формування прорахунку для клієнта за допомогою кошторису",
+        "emoji": "🤑",
         "url": TOOL_3_URL,
     },
 ]
@@ -49,7 +49,7 @@ st.markdown(
         border-radius: 12px;
         padding: 20px;
         min-height: 220px;
-        background-color: #ffffff;
+        background-color: #000000;
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
       }
       .tool-title {
@@ -58,7 +58,7 @@ st.markdown(
         margin-bottom: 0.5rem;
       }
       .tool-description {
-        color: #555;
+        color: #ffffff;
         margin-bottom: 1rem;
       }
       .stLinkButton > a {
