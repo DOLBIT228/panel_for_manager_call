@@ -110,9 +110,9 @@ for col, tool in zip(columns, TOOLS):
             unsafe_allow_html=True,
         )
 
-        # Кнопка переходу у відповідний Streamlit інструмент в тій самій вкладці
+        # Кнопка переходу у відповідний Streamlit інструмент у новій вкладці
         st.markdown(
-            f'<a class="tool-link" href="{tool["url"]}" target="_self">Відкрити інструмент</a>',
+            f'<a class="tool-link" href="{tool["url"]}" target="_blank" rel="noopener noreferrer">Відкрити інструмент</a>',
             unsafe_allow_html=True,
         )
 
