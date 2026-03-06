@@ -67,6 +67,19 @@ st.markdown(
         font-size: 1rem;
         padding: 0.7rem 1rem;
       }
+      .tool-link {
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 1rem;
+        padding: 0.7rem 1rem;
+        border-radius: 0.5rem;
+        background: #ff4b4b;
+        color: white !important;
+        text-decoration: none !important;
+        font-weight: 600;
+        margin-top: 0.5rem;
+      }
     </style>
     """,
     unsafe_allow_html=True,
@@ -97,8 +110,11 @@ for col, tool in zip(columns, TOOLS):
             unsafe_allow_html=True,
         )
 
-        # Кнопка переходу у відповідний Streamlit інструмент
-        st.link_button("Відкрити інструмент", tool["url"], use_container_width=True)
+        # Кнопка переходу у відповідний Streamlit інструмент в тій самій вкладці
+        st.markdown(
+            f'<a class="tool-link" href="{tool["url"]}" target="_self">Відкрити інструмент</a>',
+            unsafe_allow_html=True,
+        )
 
 st.divider()
 
