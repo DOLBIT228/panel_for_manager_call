@@ -13,7 +13,7 @@ st.set_page_config(
 # URL-и інструментів (легко змінювати в одному місці)
 # ------------------------------------------------------------
 TOOL_1_URL = "https://fgm-report-mamfjktx277oqtvhgeqdwm.streamlit.app/#9367593b"
-TOOL_2_URL = "https://distribution-of-applications.streamlit.app/"
+TOOL_2_URL = "http://91.207.55.99/"
 TOOL_3_URL = "https://costories.streamlit.app/"
 
 # Опис інструментів у структурі даних, щоб було легко додавати нові
